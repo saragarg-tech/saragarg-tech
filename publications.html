@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications & Books - Sara Garg</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="brand">
+      <span class="brand-dot"></span> Sara Garg | MedAI Ethics
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="research.html">Research & Projects</a></li>
+        <li><a href="publications.html" class="active">Publications & Books</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER IMAGE PLACEHOLDER -->
+  <div class="banner-container">
+    <div class="banner-placeholder">
+      <span>[ BANNER LOCATION: publications-banner.jpg ]</span>
+      <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">Suggested Graphic: Book Cover / Published Journal Concept</span>
+    </div>
+  </div>
+
+  <main>
+    <h1>Publications & Creative Works</h1>
+    <p class="subtitle">Peer-reviewed manuscripts, medical ethics literature, and published poetry collections.</p>
+
+    <!-- SECTION 1: POETRY BOOK -->
+    <button class="interactive-heading-btn active">01. Published Poetry Book: "Elements"</button>
+    <div class="accordion-content" style="max-height: 1000px;">
+      <div class="markdown-body">
+        <h3>Elements (Kallisto Gaia Press, 2023)</h3>
+        <p>A published poetry collection exploring the intersections of human resilience, physical sciences, and identity.</p>
+        
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://kallistogaiapress.org" target="_blank" rel="noopener" class="btn-primary">
+            🛒 Purchase "Elements" via Kallisto Gaia Press
+          </a>
+          <a href="https://amazon.com" target="_blank" rel="noopener" class="btn-secondary">
+            📖 Purchase via Retailers
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: PEER-REVIEWED JOURNAL PAPERS -->
+    <button class="interactive-heading-btn">02. Peer-Reviewed Papers & Academic Proceedings</button>
+    <div class="accordion-content">
+      <div class="markdown-body">
+        
+        <h3>ACS Medicinal Chemistry Letters</h3>
+        <p>Shiv Garg, <strong>Sara Garg</strong>, <em>“Performance Gap between Quantum Computing and Classical Machine Learning Models for Drug Potency Prediction.”</em> (Accepted 2026).</p>
+        <p style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+          <a href="https://pubs.acs.org" target="_blank" rel="noopener" class="btn-secondary">View Publication Page (DOI) ↗</a>
+        </p>
+
+        <h3>SIIM24 Annual Meeting Proceedings</h3>
+        <p>Bardia Khosravi, MD, MPH, MHPE, Theo Dapamede, MD, PhD, Zvipo Chisango, Anirudh Bikmal, <strong>Sara Garg</strong>, et al., <em>“Enhancing Chest Radiograph Analysis with Large Language Model Extracted Labels for Granular Pathology Detection.”</em> (2024).</p>
+        <p style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+          <a href="https://siim.org" target="_blank" rel="noopener" class="btn-secondary">View SIIM Proceedings ↗</a>
+        </p>
+
+        <h3>Forthcoming Research</h3>
+        <p><strong>Sara Garg</strong>, <em>“Disparities in chronological/biological age as disease predictors from x-rays and epigenetic clocks.”</em></p>
+
+      </div>
+    </div>
+
+    <!-- SECTION 3: EMORY UNDERGRADUATE MEDICAL REVIEW -->
+    <button class="interactive-heading-btn">03. Emory Undergraduate Medical Review Publications</button>
+    <div class="accordion-content">
+      <div class="markdown-body">
+        <ul>
+          <li>
+            <strong>Sara Garg</strong> (2025). <em>“The Utility of AI to Increase Cancer Medication Compliance.”</em>
+            <br><a href="https://emory.edu" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:0.4rem;">Read Article ↗</a>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Sara Garg</strong> (2024). <em>“The Impact of Invisible Racial Groups in Clinical Research.”</em>
+            <br><a href="https://emory.edu" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:0.4rem;">Read Article ↗</a>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Sara Garg</strong>, Mathieu Rihet (2024). <em>“Examining the cause of alcoholism on the social and genetic level: Who is to blame?”</em>
+            <br><a href="https://emory.edu" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:0.4rem;">Read Article ↗</a>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Sara Garg</strong> (2024). <em>“Blending modern medicine and ancient traditions: Holistic medicine helps everyone.”</em>
+            <br><a href="https://emory.edu" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:0.4rem;">Read Article ↗</a>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Sara Garg</strong> (2023). <em>“The effectiveness of AI-enabled techniques for cataract screenings in Nepal.”</em>
+            <br><a href="https://emory.edu" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:0.4rem;">Read Article ↗</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Sara Garg. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.interactive-heading-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const content = btn.nextElementSibling;
+        content.style.maxHeight = btn.classList.contains('active') ? content.scrollHeight + "px" : null;
+      });
+    });
+  </script>
+</body>
+</html>

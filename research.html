@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Initiatives - Sara Garg</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="brand">
+      <span class="brand-dot"></span> Sara Garg | MedAI Ethics
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="research.html" class="active">Research & Projects</a></li>
+        <li><a href="publications.html">Publications & Books</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER IMAGE PLACEHOLDER -->
+  <div class="banner-container">
+    <div class="banner-placeholder">
+      <span>[ BANNER LOCATION: research-banner.jpg ]</span>
+      <span style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">Suggested Graphic: Chest Radiograph AI Analysis Heatmap</span>
+    </div>
+  </div>
+
+  <main>
+    <h1>Research & Computational Initiatives</h1>
+    <p class="subtitle">Click any project heading below to expand its full markdown documentation and technical specifications.</p>
+
+    <!-- PROJECT 1 -->
+    <button class="interactive-heading-btn">Project Alpha: Radiograph Granular Pathology Detection via LLMs (SIIM24)</button>
+    <div class="accordion-content">
+      <div class="markdown-body">
+        <h3>Collaborative Radiology AI Research</h3>
+        <p>In partnership with researchers from Mayo Clinic and Emory Radiology, this project evaluates the efficacy of extracting granular pathology labels from radiology reports using Large Language Models to improve automated chest radiograph analysis.</p>
+        
+        <h3>Technical Summary</h3>
+        <ul>
+          <li><code>Focus:</code> Granular pathology extraction & disease classification</li>
+          <li><code>Methodology:</code> LLM-extracted labeling pipelines paired with deep convolutional networks</li>
+          <li><code>Conference:</code> SIIM24 Annual Meeting & Informatic TECH Expo</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <button class="interactive-heading-btn">Project Beta: Quantum vs. Classical Machine Learning in Drug Potency</button>
+    <div class="accordion-content">
+      <div class="markdown-body">
+        <h3>Potency Prediction Models</h3>
+        <p>Comparative analysis evaluating the performance gap between classical QSAR models and quantum computing frameworks in predicting therapeutic compound potency.</p>
+        
+        <h3>Technical Summary</h3>
+        <ul>
+          <li><code>Status:</code> Accepted to <em>ACS Medicinal Chemistry Letters</em> (2026)</li>
+          <li><code>Domain:</code> Computational chemistry, drug discovery pipelines, quantum machine learning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <button class="interactive-heading-btn">Project Gamma: Biological Age & Epigenetic Clocks from Radiographs</button>
+    <div class="accordion-content">
+      <div class="markdown-body">
+        <h3>Biological Age Disparities as Disease Predictors</h3>
+        <p>Investigating discrepancies between chronological age and biological age derived from imaging metadata and epigenetic clocks to predict chronic disease trajectories.</p>
+        
+        <h3>Technical Summary</h3>
+        <ul>
+          <li><code>Status:</code> Forthcoming Publication</li>
+          <li><code>Impact:</code> Identifying systemic disparities in biological aging markers across diverse patient cohorts</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Sara Garg. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.interactive-heading-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const content = btn.nextElementSibling;
+        content.style.maxHeight = btn.classList.contains('active') ? content.scrollHeight + "px" : null;
+      });
+    });
+  </script>
+</body>
+</html>

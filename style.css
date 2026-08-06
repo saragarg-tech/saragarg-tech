@@ -211,3 +211,28 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid rgba(255,255,255,0.05);
 }
+
+/* Add/Append these rules to style.css */
+
+/* Background Canvas Layering */
+#circuit-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensures it stays behind interactive content */
+  pointer-events: none; /* Allows user clicks to pass through to elements */
+}
+
+/* Ensure body allows absolute background positioning */
+body {
+  position: relative;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
